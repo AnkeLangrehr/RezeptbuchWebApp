@@ -1,7 +1,7 @@
-export class Recipe{
+export interface Recipe{
 
- private id: number;
- private name: string;
- private beschreibung: string
+id: number;
+name: string;
+beschreibung: string
 
 }

@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { RecipesComponent } from './recipes/recipes.component';
 import {HttpClientModule} from "@angular/common/http";
+import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainPageComponent,
-    RecipesComponent
+    RecipesComponent,
+    RecipeDetailComponent
   ],
   imports: [
     BrowserModule,

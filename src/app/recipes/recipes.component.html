@@ -1,9 +1,15 @@
-<p>recipes works!</p>
-<div *ngFor="let recipe of recipes">
-  <h2>{{recipe.name}}</h2>
+<h1>Meine Rezepte</h1>
+<hr>
 
-  <p>
-    {{recipe.beschreibung}}
-  </p>
-  <a href="{{recipe.id}}">Rezept Details</a>
+<div class="mx-auto" style="width: 200px;padding-left: 20px" *ngFor="let recipe of recipes">
+  <div class="list-group-item clearfix">
+    <h2>{{recipe.name}}</h2>
+    <p>
+      {{recipe.beschreibung}}
+    </p>
+    <a [routerLink]="['/recipes',recipe.id]" routerLinkActive="active">{{recipe.id}}</a>
+  </div>
 </div>
+
+
+
